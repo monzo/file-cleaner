@@ -1,52 +1,32 @@
 # File Cleaner by Monzo
 
-File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order.
+File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order. We’ve written all about why we built it and the way it works [on our blog](monzo.com/blog). 
 
-## How it works?
-By following an artboard naming convention of 100, 101, 102, File Cleaner generates a grid for your canvas and ensures that every screen is in the right place. Here’s a video of File Cleaner working in practice:
-<figure>
-  <video controls muted style="width: 958px; max-width: 100%;">
-  <source src=“/assets/monzo-file-cleanup-basic.mp4” type="video/mp4">
-  Sorry, your browser does not support the video tag. Please update.
-  </video>
-</figure>
+## What File Cleaner does
+By following an artboard naming convention of 100, 101, 102, File Cleaner generates a grid for your canvas and ensures that every screen is in the right place, no matter what you add or where you add it. Here’s what it does to your files:
+GIF
 
-### The parameters for how it works:
-* There is one page per file, named Master
-* Each flow in the page is on its own row, and starts with a number that denotes it
-* Each artboard is named after the flow its in, followed by where it sits in that flow. So, the 5th artboard in the 2nd flow is named 205.
-
-### When you run Validate and Clean, it will:
+### ✨ When you run Validate and Clean, it will:
 * Tell you if there’s anything missing (eg. page name, artboards without names)
 * Tell you if there’s any duplicate artboards
 * Align all the artboards to their correct place in the grid
 * Place new artboards in the correct place in their flow
-* Re-order the left panel so artboards are in the correct order
+* Re-arrange the left panel so artboards are in the correct order
 
-### Some examples of how File Cleaner works in practice:
+### 👀 Some examples of how File Cleaner works in practice:
 When you add a new screen to the end of your row it’ll give it the correct name and position:
-<figure>
-  <video controls muted style="width: 958px; max-width: 100%;">
-  <source src=“/assets/example-1.mp4” type="video/mp4">
-  Sorry, your browser does not support the video tag. Please update.
-  </video>
-</figure>
+GIF
 
 When you make one artboard taller than the others it’ll adjust the grid to reflect this:
-<figure>
-  <video controls muted style="width: 958px; max-width: 100%;">
-  <source src=“/assets/example-2.mp4” type="video/mp4">
-  Sorry, your browser does not support the video tag. Please update.
-  </video>
-</figure>
+GIF
 
 When you place a screen in the middle of a row, it’ll give it the correct name and update the names of all the following screen:
-<figure>
-  <video controls muted style="width: 958px; max-width: 100%;">
-  <source src=“/assets/example-3.mp4” type="video/mp4">
-  Sorry, your browser does not support the video tag. Please update.
-  </video>
-</figure>
+GIF
+
+### 📄 The parameters for how it works:
+* There is one page per file, named Master
+* Each flow in the page is on its own row, and starts with a number that denotes it
+* Each artboard is named after the flow its in, followed by where it sits in that flow. So, the 5th artboard in the 2nd flow is named 205.
 
 *Top tip: if File Cleaner tells you when you’ve dropped an artboard into the middle of a flow and it has a duplicate name, you can add a suffix to the artboard name (eg “203#”) and it’ll position correctly*.
 
