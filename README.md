@@ -2,12 +2,13 @@
 
 File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order. We’ve written all about why we built it and the way it works [on our blog](monzo.com/blog). 
 
-![Plugin Screenshot](/assets/github-plugin-screenshot.png "Plugin Screenshot”)
+![Plugin Screenshot](/assets/github-plugin-screenshot.png)
 
 ## What File Cleaner does
 By following an artboard naming convention of 100, 101, 102, File Cleaner generates a grid for your canvas and ensures that every screen is in the right place, no matter what you add or where you add it. Here’s what it does to your files:
-![Cleaning the file](/assets/github-off-on.gif)
+![Cleaning the file](/assets/github-off-on.gif =800x)
 
+<br>
 
 ### ✨ When you run Validate and Clean, it will:
 * Tell you if there’s anything missing (eg. page name, artboards without names)
@@ -16,17 +17,22 @@ By following an artboard naming convention of 100, 101, 102, File Cleaner genera
 * Place new artboards in the correct place in their flow
 * Re-arrange the left panel so artboards are in the correct order
 
+<br>
 
 ### 👀 Some examples of how File Cleaner works in practice:
 When you add a new screen to the end of your row it’ll give it the correct name and position:
-![Example 1](/assets/github-example-1.gif)
+
+![Example 1](/assets/github-example-1.gif =600x)<br>
 
 When you make one artboard taller than the others it’ll adjust the grid to reflect this:
-![Example 2](/assets/github-example-2.gif)
+
+![Example 2](/assets/github-example-2.gif =600x)<br>
 
 When you place a screen in the middle of a row, it’ll give it the correct name and update the names of all the following screen:
-![Example 1](/assets/github-example-3.gif)
 
+![Example 1](/assets/github-example-3.gif =600x)
+
+<br>
 
 ### 📄 The parameters for how it works:
 * There is one page per file, named `Master`
@@ -35,10 +41,11 @@ When you place a screen in the middle of a row, it’ll give it the correct name
 
 *Top tip: if File Cleaner tells you when you’ve dropped an artboard into the middle of a flow and it has a duplicate name, you can add a suffix to the artboard name (eg “203#”) and it’ll position correctly*.
 
+<br>
 
 ## Installation
 
-Double click `monzo-file-cleaner.sketchplugin` in Finder, or run `open monzo-file-cleaner.sketchplugin` from the terminal, within this directory.
+Download this to your desktop, double click `monzo-file-cleaner.sketchplugin` in Finder, or run `open monzo-file-cleaner.sketchplugin` from the terminal, within this directory.
 
 
 ### This is a plugin from [Monzo Design](http://monzo.com/design). We’ve written about why we’ve built this plugin and [how we use it here](http://monzo.com/blog). 
