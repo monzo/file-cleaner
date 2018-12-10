@@ -2,11 +2,9 @@
 
 File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order. We’ve written all about why we built it and the way it works [on our blog](monzo.com/blog). 
 
-![Plugin Screenshot](/assets/github-plugin-screenshot.png)
-
 ## What File Cleaner does
 By following an artboard naming convention of 100, 101, 102, File Cleaner generates a grid for your canvas and ensures that every screen is in the right place, no matter what you add or where you add it. Here’s what it does to your files:
-![Cleaning the file](/assets/github-off-on.gif =800x)
+![Cleaning the file](/assets/github-off-on.gif  | width=800)
 
 <br>
 
@@ -22,15 +20,15 @@ By following an artboard naming convention of 100, 101, 102, File Cleaner genera
 ### 👀 Some examples of how File Cleaner works in practice:
 When you add a new screen to the end of your row it’ll give it the correct name and position:
 
-![Example 1](/assets/github-example-1.gif =600x)<br>
+![Example 1](/assets/github-example-1.gif  | width=600)<br>
 
 When you make one artboard taller than the others it’ll adjust the grid to reflect this:
 
-![Example 2](/assets/github-example-2.gif =600x)<br>
+![Example 2](/assets/github-example-2.gif  | width=600)<br>
 
 When you place a screen in the middle of a row, it’ll give it the correct name and update the names of all the following screen:
 
-![Example 1](/assets/github-example-3.gif =600x)
+![Example 1](/assets/github-example-3.gif  | width=600)
 
 <br>
 
@@ -47,5 +45,5 @@ When you place a screen in the middle of a row, it’ll give it the correct name
 
 Download this to your desktop, double click `monzo-file-cleaner.sketchplugin` in Finder, or run `open monzo-file-cleaner.sketchplugin` from the terminal, within this directory.
 
-
-### This is a plugin from [Monzo Design](http://monzo.com/design). We’ve written about why we’ve built this plugin and [how we use it here](http://monzo.com/blog). 
+<br>
+### This is a plugin from [Monzo Design](http://monzo.com/design).
