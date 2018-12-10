@@ -1,0 +1,36 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "👮‍♀️ Validate",
+      "description": "Check that the correct conventions are being followed 🤓",
+      "identifier": "monzo.validate",
+      "script": "validate.js",
+      "shortcut": "ctrl shift m"
+    },
+    {
+      "name": "✅ Validate and clean",
+      "description": "Apply correct conventions automatically ️️️✨️",
+      "identifier": "monzo.validate-and-fix",
+      "script": "validate-and-fix.js",
+      "shortcut": "ctrl shift l"
+    }
+  ],
+  "menu": {
+    "title": "✨ File Cleaner",
+    "items": [
+      "monzo.validate",
+      "monzo.validate-and-fix"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "A plugin that keeps your Sketch files in perfect shape.",
+  "name": "File Cleaner",
+  "identifier": "File Cleaner",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "Monzo",
+  "authorEmail": "harry@monzo.com"
+}

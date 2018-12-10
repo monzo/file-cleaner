@@ -1,0 +1,27 @@
+{
+  "name": "monzo-file-cleaner",
+  "description": "A plugin that keeps your Sketch files in perfect shape.",
+  "version": "1.0.0",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Monzo File Cleaner",
+    "manifest": "src/manifest.json",
+    "main": "monzo-file-cleaner.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2",
+    "prettier": "^1.14.2"
+  },
+  "author": "Monzo <harry@monzo.com>"
+}

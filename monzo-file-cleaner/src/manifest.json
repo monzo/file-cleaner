@@ -1,0 +1,25 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "👮‍♀️ Validate",
+      "description": "Check that Monzo conventions are being followed 🤓",
+      "identifier": "monzo.validate",
+      "script": "./cmd/validate.js",
+      "shortcut": "ctrl shift m"
+    },
+    {
+      "name": "🧙‍♀️ Validate and fix",
+      "description": "Apply Monzo conventions automatically 🧙‍♀️",
+      "identifier": "monzo.validate-and-fix",
+      "script": "./cmd/validate-and-fix.js",
+      "shortcut": "ctrl shift l"
+    }
+  ],
+  "menu": {
+    "title": "🏦 Monzo",
+    "items": ["monzo.validate", "monzo.validate-and-fix"]
+  }
+}
