@@ -1,6 +1,6 @@
 # File Cleaner by Monzo
 
-File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order. We’ve written all about why we built it and the way it works [on our blog](https://monzo.com/blog). 
+File Cleaner is a plugin that keeps your Sketch files immaculately clean and in order. We’ve written all about why we built it and the way it works [on our blog](https://monzo.com/blog/2018/12/11/design-files-system/). 
 
 ## What File Cleaner does
 By following an artboard naming convention of 100, 101, 102, File Cleaner generates a grid for your canvas and ensures that every screen is in the right place, no matter what you add or where you add it. Here’s what it does to your files:<br>
