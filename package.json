@@ -13,6 +13,10 @@
       "assets/**/*"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monzo/file-cleaner"
+  },
   "scripts": {
     "build": "skpm-build",
     "watch": "skpm-build --watch",
