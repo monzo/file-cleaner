@@ -43,7 +43,9 @@ When you place a screen in the middle of a row, it’ll give it the correct name
 
 ## Installation
 
-[Download this](https://github.com/monzo/file-cleaner/archive/master.zip) to your desktop, double click `monzo-file-cleaner.sketchplugin` in Finder, or run `open monzo-file-cleaner.sketchplugin` from the terminal, within this directory.
+* [Download](https://github.com/monzo/file-cleaner/releases/latest) the latest release of the plugin
+* Un-zip
+* Double-click on monzo-file-cleaner.sketchplugin
 
 <br>
 
