@@ -120,7 +120,8 @@ export function autoAlignArtboards(page) {
         nextYOffset = height + (500 - (height % 500));
       }
 
-      x += 500;
+      const width = artboard.frame().width() + 140;
+      x += width;
       sequenceNumber++;
     }
     y += nextYOffset;
