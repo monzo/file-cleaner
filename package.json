@@ -1,7 +1,7 @@
 {
   "name": "monzo-file-cleaner",
   "description": "A plugin that keeps your Sketch files in perfect shape.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "sketch": ">=3.0"
   },
