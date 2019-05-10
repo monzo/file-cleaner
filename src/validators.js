@@ -40,8 +40,12 @@ export function validateArtboardNames(context) {
   const master = getMasterPage(context);
   const artboards = master.artboards();
   const artboardsByName = {};
+  let flowStart = false;
   for (let i = 0; i < artboards.length; i++) {
     const name = String(artboards[i].name());
+    if (name.match(/[0]{2}$/)) {
+      flowStart = true;
+    }
     if (artboardsByName[name]) {
       return { success: false, message: `Duplicate artboard name '${name}'` };
     }
@@ -50,6 +54,9 @@ export function validateArtboardNames(context) {
     if (!name.match(/^\d{3,4}(\.[A-Z]{1,2})?/)) {
       return { success: false, message: `Invalid artboard name '${name}'` };
     }
+  }
+  if (!flowStart) {
+    return { success: false, message: `Missing x00 artboard to start the flow` };
   }
   return { success: true };
 }
