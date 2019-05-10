@@ -16,6 +16,17 @@
       "identifier": "monzo.validate-and-fix",
       "script": "./cmd/validate-and-fix.js",
       "shortcut": "ctrl shift l"
+    },
+    {
+      "name": "💯 Rename first artboard",
+      "description": "Automatically set up the first artboard name ✏️",
+      "identifier": "monzo.artboards-insert",
+      "script": "./artboards.js",
+      "handlers" : {
+        "actions": {
+          "ArtboardChanged": "onArtboardChanged"
+        }
+      }
     }
   ],
   "menu": {
