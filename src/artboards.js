@@ -1,40 +1,5 @@
 import { getMasterPage } from "./utils";
 import { validateAll } from "./validators";
-import sketch from 'sketch'
-
-export function onArtboardChanged(context) {
-  const doc = sketch.getSelectedDocument()
-  const pages = doc.pages
-  // Get master page
-  let firstPage = null
-  let hasMasterPage = false
-  pages.forEach(function(page) {
-      if (page.name == "Master") {
-        firstPage = page
-        hasMasterPage = true
-      }
-  })
-  if (!hasMasterPage) {
-    firstPage = pages[0]
-  }
-
-  // Get first artboard
-  let artboards = []
-  firstPage.layers.forEach(function(layer) {
-    console.log(`${layer}`)
-    if (layer.type == 'Artboard') {
-      artboards.push(layer)
-    }
-  })
-  const isFirstArtboard = artboards.length == 1
-  if (!hasMasterPage && isFirstArtboard) {
-    sketch.UI.message(`⚠️ Missing page named 'Master'`)
-  }
-  // Rename artboard if it's the first
-  if (isFirstArtboard) {
-    artboards[0].name = "100"
-  }
-}
 
 export function artboardsByName(page) {
   const artboards = page.artboards();
