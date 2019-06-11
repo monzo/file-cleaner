@@ -24,7 +24,7 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.5.11",
+    "@skpm/builder": "^0.7.0",
     "prettier": "^1.14.2"
   },
   "author": "Monzo <harry@monzo.com>"
