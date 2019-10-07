@@ -4,14 +4,14 @@ import {validateAll} from '../validators';
 import {autoAlignArtboards} from '../artboards';
 import {markWipRows} from '../wip-rows';
 
-export default function validateAndFix(context) {
-  const result = validateAll(context);
-  if (!result.success) {
-    UI.message(`‼️ ${result.message}`);
-    return;
+export default async function validateAndFix(context) {
+  try {
+    await validateAll(context);
+  } catch (error) {
+    UI.message(`‼️ ${erro.message}`);
   }
 
-  const master = getMasterPage(context);
+  const master = getPageByName(context, 'Master');
 
   // Fix artboard alignment on the Master page
   autoAlignArtboards(master);

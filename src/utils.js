@@ -1,7 +1,7 @@
-export function getMasterPage(context) {
+export function getPageByName(context, name) {
   const pages = context.document.pages();
   for (let i = 0; i < pages.length; i++) {
-    if (pages[i].name() == 'Master') {
+    if (pages[i].name() == name) {
       return pages[i];
     }
   }
