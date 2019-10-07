@@ -1,5 +1,5 @@
-import UI from "sketch/ui";
-import { validateAll } from "../validators";
+import UI from 'sketch/ui';
+import {validateAll} from '../validators';
 
 export default function validate(context, hideSuccess) {
   const result = validateAll(context);

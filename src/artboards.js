@@ -1,5 +1,5 @@
-import { getMasterPage } from "./utils";
-import { validateAll } from "./validators";
+import {getMasterPage} from './utils';
+import {validateAll} from './validators';
 
 export function artboardsByName(page) {
   const artboards = page.artboards();
@@ -49,7 +49,7 @@ export function artboardRowsByPosition(page) {
   }
   const yPositions = Object.entries(rows).map(([name, row]) => [
     name,
-    row[0].frame().y()
+    row[0].frame().y(),
   ]);
 
   // Add other artboards into the rows
