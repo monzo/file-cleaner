@@ -1,7 +1,5 @@
 import {getPageByName} from './utils';
-
-const REQUIRED_PAGE_NAMES = ['iOS', 'Android'];
-const ALLOWED_PAGE_NAMES = ['iOS', 'Android', 'Master', 'Symbols'];
+import {REQUIRED_PAGE_NAMES, ALLOWED_PAGE_NAMES} from './constants';
 
 const validators = [
   validatePagePresence,
