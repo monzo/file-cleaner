@@ -27,5 +27,8 @@
     "@skpm/builder": "^0.7.4",
     "prettier": "^1.14.2"
   },
-  "author": "Monzo <harry@monzo.com>"
+  "author": "Monzo <harry@monzo.com>",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  }
 }

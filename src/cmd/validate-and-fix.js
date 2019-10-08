@@ -1,21 +1,21 @@
-import UI from "sketch/ui";
-import { getMasterPage } from "../utils";
-import { validateAll } from "../validators";
-import { autoAlignArtboards } from "../artboards";
-import { markWipRows } from "../wip-rows";
+import UI from 'sketch/ui';
+import {getPageByName} from '../utils';
+import {validateAll} from '../validators';
+import {autoAlignArtboards} from '../artboards';
+import {markWipRows} from '../wip-rows';
+import {REQUIRED_PAGE_NAMES} from '../constants';
 
-export default function validateAndFix(context) {
-  const result = validateAll(context);
-  if (!result.success) {
-    UI.message(`‼️ ${result.message}`);
-    return;
+export default async function validateAndFix(context) {
+  try {
+    await validateAll(context);
+  } catch (error) {
+    UI.message(`‼️ ${error.message}`);
   }
 
-  const master = getMasterPage(context);
+  REQUIRED_PAGE_NAMES.forEach(pageName => {
+    const page = getPageByName(context, pageName);
 
-  // Fix artboard alignment on the Master page
-  autoAlignArtboards(master);
-
-  // Colour the backgrounds of rows with WIP symbols
-  markWipRows(context, master);
+    // Fix artboard alignment on the page
+    autoAlignArtboards(page);
+  });
 }

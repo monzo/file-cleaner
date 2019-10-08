@@ -1,10 +1,10 @@
-import { Document } from "sketch/dom";
-import { artboardRowsByName } from "./artboards";
-import { colorFromString } from "./utils";
+import {Document} from 'sketch/dom';
+import {artboardRowsByName} from './artboards';
+import {colorFromString} from './utils';
 
 const wipSymbolRegex = /\bWIP$/;
-const defaultArtboardColor = colorFromString("#000000");
-const wipArtboardColor = colorFromString("#F43951");
+const defaultArtboardColor = colorFromString('#000000');
+const wipArtboardColor = colorFromString('#F43951');
 
 export function markWipRows(context, page) {
   const wipRows = findWipRows(context, page);
@@ -34,8 +34,9 @@ export function findWipRows(context, page) {
   }
 
   const wipRows = [];
+
   for (let instance of symbolMaster.getAllInstances()) {
-    while (instance && instance.type != "Artboard") {
+    while (instance && instance.type != 'Artboard') {
       instance = instance.parent;
     }
 
