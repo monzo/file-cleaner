@@ -1,5 +1,5 @@
 import {getPageByName} from './utils';
-import {REQUIRED_PAGE_NAMES, ALLOWED_PAGE_NAMES} from './constants';
+import {ALLOWED_PAGE_NAMES} from './constants';
 
 const validators = [
   validatePagePresence,
@@ -24,15 +24,24 @@ export function validateAll(context) {
 }
 
 /**
- * Ensures that there is either a Master page, or an iOS/Android page.
+ * Ensures that there is either a Master page, or that both iOS and Android exist
  */
 export function validatePagePresence(context) {
   return new Promise((resolve, reject) => {
-    REQUIRED_PAGE_NAMES.forEach(pageName => {
-      if (!getPageByName(context, pageName)) {
-        reject({message: `Missing page ${pageName}`});
-      }
-    });
+    if (getPageByName(context, 'iOS') && !getPageByName(context, 'Android')) {
+      reject({message: `Missing page Android`});
+    }
+
+    if (getPageByName(context, 'Android') && !getPageByName(context, 'iOS')) {
+      reject({message: `Missing page iOS`});
+    }
+
+    if (
+      !getPageByName(context, 'Master') &&
+      (!getPageByName(context, 'iOS') || !getPageByName(context, 'Android'))
+    ) {
+      reject({message: `Missing page Master`});
+    }
 
     resolve();
   });
