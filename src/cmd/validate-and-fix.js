@@ -3,7 +3,7 @@ import {getPageByName} from '../utils';
 import {validateAll} from '../validators';
 import {autoAlignArtboards} from '../artboards';
 import {markWipRows} from '../wip-rows';
-import {REQUIRED_PAGE_NAMES} from '../constants';
+import {SCOPED_PAGE_NAMES} from '../constants';
 
 export default async function validateAndFix(context) {
   try {
@@ -12,7 +12,7 @@ export default async function validateAndFix(context) {
     UI.message(`‼️ ${error.message}`);
   }
 
-  REQUIRED_PAGE_NAMES.forEach(pageName => {
+  SCOPED_PAGE_NAMES.forEach(pageName => {
     const page = getPageByName(context, pageName);
 
     // Fix artboard alignment on the page
