@@ -49,13 +49,12 @@ export function validatePagePresence(context) {
 
 export function validatePageNames(context) {
   return new Promise((resolve, reject) => {
-    const allowedNames = ['Master', 'Symbols', 'iOS', 'Android'];
     const pages = context.document.pages();
 
     for (let i = 0; i < pages.length; i++) {
       const name = String(pages[i].name());
 
-      if (allowedNames.indexOf(name) === -1) {
+      if (ALLOWED_PAGE_NAMES.indexOf(name) === -1) {
         reject({message: `Invalid page name '${name}'`});
       }
     }
