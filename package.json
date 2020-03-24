@@ -25,10 +25,10 @@
   },
   "devDependencies": {
     "@skpm/builder": "^0.7.5",
-    "prettier": "^1.14.2"
+    "prettier": "^1.19.1"
   },
   "author": "Monzo <harry@monzo.com>",
   "dependencies": {
-    "@babel/polyfill": "^7.6.0"
+    "@babel/polyfill": "^7.8.7"
   }
 }
